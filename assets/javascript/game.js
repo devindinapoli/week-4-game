@@ -37,16 +37,27 @@ $("#userScore").html(userScore);
 $("#randomNumber").html(randomNumber);
 
 };
-
+//creates the function to check if the user has won or lost
 function winOrLose(){
+
+    //added audio for losing and winning
+    var audioWin = document.createElement('audio');
+    var audioLose = document.createElement('audio');
+    audioWin.setAttribute('src', 'assets/victory.mp3');
+    audioLose.setAttribute('src', 'assets/loser.mp3');
+
     if(userScore > randomNumber){
         losses++;
+        audioLose.play();
         startGame();
     }
+    
     if(userScore == randomNumber){
-        wins++; 
+        wins++;
+        audioWin.play(); 
         startGame();
     }
+   
 }
 
 //start the game
