@@ -1,31 +1,25 @@
 body{
     background-image: url("../images/spiration-light.png")
 }
-
 .imgClass{
     height: 75px;
     width: 75px;
     margin-left: 350px;
 }
-
 .jumbotron{
     margin-bottom: 5px;
 }
-
 .row {
 	margin-bottom: 25px;
 }
-
 .randomNumberDiv {
     background-color: lightgreen;
     margin-left: 175px;
 }
-
 .winsLossesDiv {
     background-color: lightblue;
     margin-left: 150px;
 }
-
 .scoreDiv {
     background-color: red;
     margin-left: 400px;
